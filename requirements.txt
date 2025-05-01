@@ -1,0 +1,10 @@
+paho-mqtt
+kafka-python
+azure-iot-hub
+pandas
+numpy
+statsmodels
+tensorflow
+sqlalchemy
+psycopg2-binary
+requests
