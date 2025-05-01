@@ -73,5 +73,3 @@ volumes:
   kafka_data:
   timescale_data:
   grafana_data:
-
-docker-compose up -d
