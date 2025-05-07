@@ -42,9 +42,9 @@ services:
     ports:
       - "5432:5432"            # Postgres port
     environment:
-      - POSTGRES_USER=${alekhabecker_2028@depauw.edu}
+      - POSTGRES_USER=${tsdbadmin}
       - POSTGRES_PASSWORD=${Hekoaahagency!2}
-      - POSTGRES_DB=${IoT Sensor DB Amrou Awaysheh Alek Habecker}
+      - POSTGRES_DB=${tsdb}
     volumes:
       - timescale_data:/var/lib/postgresql/data       # persist database
 
