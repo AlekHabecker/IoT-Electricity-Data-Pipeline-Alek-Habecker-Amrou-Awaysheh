@@ -1,0 +1,12 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "iotdatacontainer/machine_energy_sensor_data_100MB.csv",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}

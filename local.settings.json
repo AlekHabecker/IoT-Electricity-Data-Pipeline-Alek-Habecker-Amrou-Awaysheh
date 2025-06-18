@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "Random-ahh-words",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "COSMOS_DB_URI": "https://iotcosmoshabecker.documents.azure.com:443/",
+    "COSMOS_DB_KEY": "Spooky-info",
+    "COSMOS_DB_DATABASE": "IoTDATABASEALEKHABECKER",
+    "COSMOS_DB_CONTAINER": "iotdatabasecontaineralekhabecker"
+  }
+}
