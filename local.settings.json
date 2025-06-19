@@ -1,8 +1,9 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "Random-ahh-words",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=iotstoragealekhabecker;AccountKey=JwWhHNHJ/cuFGA5ZX8/bR1gzgA2hy9y4VoapIVPW/eZ/PJovIcQ/pPqFWnS9HZVkgkPiQ8ch8Quo+AStrIa4aQ==;EndpointSuffix=core.windows.net",
     "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsSecretStorageType": "Files",
     "COSMOS_DB_URI": "https://iotcosmoshabecker.documents.azure.com:443/",
     "COSMOS_DB_KEY": "Spooky-info",
     "COSMOS_DB_DATABASE": "IoTDATABASEALEKHABECKER",
