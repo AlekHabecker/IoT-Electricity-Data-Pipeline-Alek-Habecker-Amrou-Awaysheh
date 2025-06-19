@@ -34,7 +34,7 @@ def main(myblob: func.InputStream):
         inserted = 0
         for record in reader:
             # Add partition key field (TimestampID)
-            record['TimestampID'] = record.get('timestamp')
+            record['TimestampID'] = record['timestamp']
             
             # Add unique id
             record['id'] = str(uuid.uuid4())
