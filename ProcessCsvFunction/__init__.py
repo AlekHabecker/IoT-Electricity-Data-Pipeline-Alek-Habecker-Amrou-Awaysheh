@@ -1,11 +1,24 @@
-import os
 import logging
 import csv
 import io
 import uuid  # new import
 from datetime import datetime
 import azure.functions as func
-from azure.cosmos import CosmosClient
+
+def test_cosmos_auth():
+    try:
+        from azure.cosmos import CosmosClient
+        import os
+        
+        client = CosmosClient.from_connection_string(os.environ['COSMOS_DB_CONNECTION'])
+        
+        # Try to list databases (minimal permission needed)
+        databases = list(client.list_databases())
+        print(f"Authentication successful. Found {len(databases)} databases")
+        return True
+    except Exception as e:
+        print(f"Authentication failed: {e}")
+        return False
 
 def main(myblob: func.InputStream):
     logging.info(f"\U0001F680 Function triggered for blob: {myblob.name}, Size: {myblob.length} bytes")
