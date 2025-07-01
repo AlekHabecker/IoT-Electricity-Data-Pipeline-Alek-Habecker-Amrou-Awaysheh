@@ -9,10 +9,7 @@ import os
 import time
 
 app = func.FunctionApp()
-@app.blob_trigger(arg_name="myblob", path="iotdatacontainer/{name}", connection="AzureWebJobsStorage") 
-def ProcessCsvFunction(myblob: func.InputStream):
-    logging.info("🔍 DEBUG: BATCHING CODE VERSION 3.0 LOADED")  # Add this
-    logging.info(f"🚀 Function triggered for blob: {myblob.name}, Size: {myblob.length} bytes")
+
 def test_cosmos_auth():
     try:
         cosmos_endpoint = os.environ['COSMOS_DB_URI']
@@ -114,6 +111,7 @@ def process_csv_efficiently(blob_text, container):
 
 @app.blob_trigger(arg_name="myblob", path="iotdatacontainer/{name}", connection="AzureWebJobsStorage") 
 def ProcessCsvFunction(myblob: func.InputStream):
+    logging.info("🔍 DEBUG: BATCHING CODE VERSION 3.0 LOADED")  # Add this
     logging.info(f"🚀 Function triggered for blob: {myblob.name}, Size: {myblob.length} bytes")
     
     # Test CosmosDB connection first
