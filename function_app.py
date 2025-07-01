@@ -100,7 +100,7 @@ def process_csv_efficiently(blob_text, container):
     logging.info("Starting batch processing...")
     start_time = time.time()
     
-    successful, failed = process_in_batches(container, rows, batch_size=100)
+    successful, failed = process_in_batches(container, rows, batch_size=1000)
     
     total_time = time.time() - start_time
     
